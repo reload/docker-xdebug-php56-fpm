@@ -1,4 +1,4 @@
-FROM php:5.6-fpm-alpine
+FROM php:7.3.8-fpm-alpine
 
 RUN apk add --update \
     php5-fpm \
