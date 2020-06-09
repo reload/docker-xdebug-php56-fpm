@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    time: '04:00'
+    timezone: Europe/Copenhagen
+  open-pull-requests-limit: 10
+  assignees:
+  - CarstenHoyer
+  ignore:
+  - dependency-name: php
+    versions:
+    - ">= 7.a, < 8"
